@@ -97,7 +97,8 @@ void sometask2(void *args)
 	}
 }
 
-int main(void) {
+int main(void)
+{
 	pinReset();
 	sysInit();
 	pinInit();

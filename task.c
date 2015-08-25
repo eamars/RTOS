@@ -26,6 +26,18 @@ void scheduler_init(unsigned int num_tasks)
 {
 	// allocate memory for tasks
 	scheduler.tasks = (task_t *) malloc (num_tasks * sizeof(task_t));
+
+	// if failed to allocate, then trap here
+	if (scheduler.tasks == NULL)
+	{
+		while (1)
+		{
+			// unable to allocate heap memory for tasks
+			// please consider to change the size of heap and stask
+		}
+	}
+
+	// init memory block
 	memset(scheduler.tasks, 0, num_tasks * sizeof(task_t));
 
 	scheduler.max_num_tasks = num_tasks;
