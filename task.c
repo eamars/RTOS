@@ -33,7 +33,7 @@ void scheduler_init(unsigned int num_tasks)
 		while (1)
 		{
 			// unable to allocate heap memory for tasks
-			// please consider to change the size of heap and stask
+			// please consider to change the size of heap and stack
 		}
 	}
 
