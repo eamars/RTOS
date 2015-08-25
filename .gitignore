@@ -32,10 +32,3 @@
 *.dSYM/
 
 # CCS file
-.launches/
-.settings/
-Debug/
-Release/
-.ccsproject
-.cproject
-.project
