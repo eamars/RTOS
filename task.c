@@ -127,7 +127,10 @@ void scheduler_start()
 	}
 }
 
-
+task_t *scheduler_task_get(unsigned int task_id)
+{
+	return &scheduler.tasks[task_id];
+}
 
 
 

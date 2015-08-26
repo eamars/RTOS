@@ -39,4 +39,8 @@ void scheduler_cancel(unsigned int task_id);
 void scheduler_start();
 void scheduler_clean();
 
+task_t *scheduler_task_get(unsigned int task_id);
+
+
+
 #endif /* TASK_H_ */
